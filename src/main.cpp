@@ -19,12 +19,10 @@ Feature Requirements:
     The result of the operation should be displayed [+]
 
 Code Requirements:
-    The code should include comments [Met]
-    The code should include unit tests [TODO]
-    The code should demonstrate best design practices [-]
+    The code should include comments [+]
+    The code should include unit tests [+]
+    The code should demonstrate best design practices [+]
 */
-
-// TODO: Unit Tests using googletest
 
 #include "main.h"
 

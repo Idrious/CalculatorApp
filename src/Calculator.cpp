@@ -47,8 +47,8 @@ void Calculator::DecimalInput(int c)
 {
     if(_DEBUG_) { std::cout << "decimal detected.\n"; }
     char* decimal = (char*) memchr (expressionInfo.inputBuffer, '.', strlen(expressionInfo.inputBuffer));  // check if decimal point already exists in number
-    if(decimal!=NULL && _DEBUG_)  // if so, not valid
-    { std::cout<<"Attempted to place more than one decimal point into number. Ignored.\n"; }
+    if(decimal!=NULL)  // if so, not valid, found a bug HERE. 
+    { if(_DEBUG_) { std::cout<<"Attempted to place more than one decimal point into number. Ignored.\n"; } }
     else // if not, insert into buffer
     { AddToInput(c); }
 }
